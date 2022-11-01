@@ -1,7 +1,7 @@
 <?php
 include_once('../../../common.php');
-$page_num = 1;
-$page_title = "진료";
+$page_num = 2;
+$page_title = "환자/보호자";
 include_once(G5_THEME_PATH . '/head.php');
 ?>
 

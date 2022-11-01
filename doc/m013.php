@@ -1,7 +1,7 @@
 <?php
 include_once('../../../common.php');
-$page_num = 1;
-$page_title = "진료";
+$page_num = 3;
+$page_title = "건강정보";
 include_once(G5_THEME_PATH . '/head.php');
 ?>
 
@@ -10,13 +10,26 @@ include_once(G5_THEME_PATH . '/head.php');
     <h3>
         <?= $page_title ?>
     </h3>
+
     <p class="title">
         <?= $as_slogan ?>
     </p>
-    <figure>
-        <img src="../img/greeting01.jpg" alt="">
-    </figure>
-    <strong>경희의료원 홈페이지를 방문해 주신 여러분을 환영합니다.</strong>
+    <div class="box">
+        <figure data-num="01">
+            <img src="../img/visual1.jpg" alt="">
+        </figure>
+        <figure data-num="02">
+            <img src="../img/visual2.jpg" alt="">
+        </figure>
+        <figure data-num="03">
+            <figure>
+                <img src="../img/visual3.jpg" alt="">
+            </figure>
+    </div>
+
+    <strong>경희의료원 홈페이지를 방문해 주신 여러분을 환영합니다.
+
+    </strong>
     <p>경희의료원은 세계에서 유일하게 의학, 치의학, 한의학, 동서의학, 약학, 간호학 등 6개 의학분야가 공존하고 있는
         경희대학교 의료기관으로, 각 분야의 장점을 상호 보완하여 새로운 진료시스템을 구축,
         지난 50여년간 인류를 질병으로부터 지키기 위해 노력해 왔습니다.</p>
