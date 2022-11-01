@@ -1,4 +1,4 @@
-Theme Name: 1억 벌기 중 1번째 홈페이지
+Theme Name: 경희의료원
 Theme URI: http://theme.sir.kr/gnuboard5/demo/basic
 Maker: SIR
 Maker URI: http://sir.kr

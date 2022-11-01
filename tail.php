@@ -14,14 +14,21 @@ if (G5_COMMUNITY_USE === false) {
 
 
 
-
+<?php
+if (!defined('_INDEX_')) { // index가 아닐 때...
+    include G5_THEME_PATH . '/sub.tail.php'; // 서버테일
+}
+?>
 
 <footer class="footer">
-    tail
+    <ul>
+        <li>주소 : <?= $as_address ?>&nbsp;&nbsp;사업자등록번호 : <?= $as_num ?></li>
+        <li>대표전화 : <?= $as_tel ?>&nbsp;&nbsp;Fax : <?= $as_fax ?></li>
+    </ul>
+    <address>
+        copyright &copy; <?= $as_title ?> allrights reserved.
+    </address>
 </footer>
-
-
-
 
 
 </div>
@@ -35,6 +42,15 @@ if ($config['cf_analytics']) {
     echo $config['cf_analytics'];
 }
 ?>
+<?
+if ($_GET["bo_table"] == "qa") {
+    $page_num = 4;
+} else if ($_GET["bo_table"] == "notice") {
+    $page_num = 5;
+}
+// else {$page_num = "0";}
+// php는 땀을 중요시 한다. ;
+?>
 
 <!-- } 하단 끝 -->
 
@@ -43,6 +59,12 @@ if ($config['cf_analytics']) {
         // 폰트 리사이즈 쿠키있으면 실행
         font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
     });
+</script>
+<script>
+    $(function() {
+        var num = <?= $page_num ?>;
+        $('.lnb li').eq(num - 1).addClass('on').siblings().removeClass('on');
+    })
 </script>
 
 <?php

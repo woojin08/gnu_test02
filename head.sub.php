@@ -60,7 +60,7 @@ header("Pragma: no-cache"); // HTTP/1.0
 
 
     <link rel="stylesheet" href="<?php echo G5_THEME_URL ?>/css/slick.css">
-    <link rel="stylesheet" href="<?php echo G5_THEME_URL ?>/css/main.css">
+    <link rel="stylesheet" href="<?php echo G5_THEME_URL ?>/css/main.css?ver=1.0">
 
 
 
